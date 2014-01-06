@@ -6,6 +6,11 @@ import java.util.Date;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * 
+ * @author wuwj-cn 2014-1-6 下午6:21:20
+ *
+ */
 public class NgSQLServer {
 	private static final Logger log = LoggerFactory.getLogger(NgSQLServer.class);
 	private static final NgSQLServer INSTANCE = new NgSQLServer();
