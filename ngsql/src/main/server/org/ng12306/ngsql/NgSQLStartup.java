@@ -1,4 +1,4 @@
-package org.ng12306.ngsql.server;
+package org.ng12306.ngsql;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -7,9 +7,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * 
- * @author wuwj-cn 2014-1-6 下午6:21:52
- *
+ * ngSQL server启动入口
+ * @author <a href="mailto:wenjie.0617@gmail.com">wuwj-cn</a>
  */
 public class NgSQLStartup {
 	private static final Logger log = LoggerFactory.getLogger(NgSQLStartup.class);
