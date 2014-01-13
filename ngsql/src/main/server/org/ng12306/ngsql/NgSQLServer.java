@@ -102,4 +102,40 @@ public class NgSQLServer {
         log.info(server.getName() + " is started and listening on " + server.getPort());
         log.info("===============================================");
 	}
+	
+	public NIOProcessor[] getProcessors() {
+        return processors;
+    }
+
+    public NIOConnector getConnector() {
+        return connector;
+    }
+
+    public NameableExecutor getManagerExecutor() {
+        return managerExecutor;
+    }
+
+    public NameableExecutor getTimerExecutor() {
+        return timerExecutor;
+    }
+
+    public NameableExecutor getInitExecutor() {
+        return initExecutor;
+    }
+
+    public long getStartupTime() {
+        return startupTime;
+    }
+
+    public boolean isOnline() {
+        return isOnline.get();
+    }
+
+    public void offline() {
+        isOnline.set(false);
+    }
+
+    public void online() {
+        isOnline.set(true);
+    }
 }

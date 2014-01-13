@@ -29,7 +29,7 @@ import org.slf4j.LoggerFactory;
  * @author <a href="mailto:wenjie.0617@gmail.com">wuwj-cn</a>
  */
 public abstract class FrontendConnection extends AbstractConnection {
-    private static final Logger LOGGER = LoggerFactory.getLogger(FrontendConnection.class);
+    private static final Logger log = LoggerFactory.getLogger(FrontendConnection.class);
 
     protected long id;
     protected String host;
@@ -314,7 +314,7 @@ public abstract class FrontendConnection extends AbstractConnection {
     @Override
     protected void idleCheck() {
         if (isIdleTimeout()) {
-            LOGGER.warn(toString() + " idle timeout");
+            log.warn(toString() + " idle timeout");
             close();
         }
     }
